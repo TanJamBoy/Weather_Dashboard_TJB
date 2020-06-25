@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.js" 
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="myHeader col-12 bg-dark">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+
+        <section class="row justify-content-md-center">
+
+            <article class="col-lg-4 bg-light">
+
+                <article class="row" id="citySearch">
+                    <article class="col">
+                        <label for="searchBar">Search for a City:</label>
+                        <br>
+                        <input name="searchBar" type="text" id="searchInput">
+                        <button class="btn btn-primary" id="searchBtn"><i>
+                            <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            </svg>
+                        </i></button>
+                    </article>
+                </article>
+
+                <article class="row" id="cities">
+                    <article class="card citiesCard">
+                        <article class="list-group list-group-flush">
+                        <div class="searchCities list-group-item" data="Austin">Austin</div>
+                        <div class="searchCities list-group-item" data="Chicago">Chicago</div>
+                        <div class="searchCities list-group-item" data="New York">New York</div>
+                        <div class="searchCities list-group-item" data="Orlando">Orlando</div>
+                        <div class="searchCities list-group-item" data="San Francisco">San Francisco</div>
+                        <div class="searchCities list-group-item" data="Seattle">Seattle</div>
+                        <div class="searchCities list-group-item" data="Denver">Denver</div>
+                        <div class="searchCities list-group-item" data="Atlanta">Atlanta</div>
+                        </article>
+                    </article>
+                </article>
+
+            </article>
+
+            <article class="col-lg-8">
+
+                <article class="row">
+
+                    <article class="col" id="cityInfo">
+                        <h2 id="cityName">City Name:</h2>
+                        <img id="cityIcon" src="">
+                        <br>
+                        <p id="cityTemp">Temperature:</p>
+                        <p id=cityHumid>Humidity:</p>
+                        <p id="cityWind">Wind Speed:</p>
+                        <p id="cityUV">UV Index: <span class="" id=UVColor></span></p>
+                        <p id="cityWeather">Current Weather: </p>
+                    </article>
+
+                </article>
+
+                <article class="row">
+
+                    <article class="col" id="fiveDayWeather">
+
+                        <h2>5-Day Forecast:</h2>
+
+                        <article class="row justify-content-center">
+
+                            <article class="card bg-primary">
+                                
+                                <div class="card-body">
+
+                                </div>
+
+                            </article>
+
+                            <article class="card bg-primary">
+                                
+                                <div class="card-body">
+                                    
+                                </div>
+
+                            </article>
+
+                            <article class="card bg-primary">
+                                
+                                <div class="card-body">
+                                    
+                                </div>
+
+                            </article>
+
+                            <article class="card bg-primary">
+                                
+                                <div class="card-body">
+                                    
+                                </div>
+
+                            </article>
+
+                            <article class="card bg-primary">
+                                
+                                <div class="card-body">
+                                    
+                                </div>
+
+                            </article>
+
+                        </article>
+
+                    </article>
+
+                </article>
+
+            </article>
+
+        </section>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

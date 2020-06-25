@@ -1,0 +1,56 @@
+.searchCities {
+    border: 1px solid grey;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#cities {
+    margin-top: 20px;
+}
+
+.myHeader {
+    text-align: center;
+    color: white;
+}
+
+#cityInfo {
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+#cities {
+    margin: 20px 20px;
+}
+
+#citySearch {
+    margin: 10px 20px;
+}
+
+#fiveDayWeather {
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+.card {
+    width: 220px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.citiesCard {
+    width: 300px;
+}
+
+.card-body {
+    color: white;
+}
+
+#UVColor{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
