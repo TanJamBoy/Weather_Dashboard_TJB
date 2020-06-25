@@ -5,4 +5,4 @@ This project is a weather dashboard.  IT allows you to input a city to search, i
  https://tanjamboy.github.io/Weather_Dashboard_TJB/
 
 
-![Website Demo](weatherDashoardPic.png)
+![Website Demo](weatherDashoardPic.PNG)
