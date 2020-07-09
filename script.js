@@ -73,14 +73,14 @@ function currentWeather() {
         unixTime = response.dt;
         lat = response.coord.lat;
         lon = response.coord.lon;
-        UVApiUrl = "http://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon;
+        UVApiUrl = "https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon;
 
         $("#cityName").text(city + " (" + currentDay + ")");
         $("#cityTemp").text("Temperature: " + temp + " °F");
         $("#cityHumid").text("Humidity: " + humid + " %");
         $("#cityWind").text("Wind Speed: " + wind + " MPH");
         $("#cityWeather").text("Current Weather: " + weather)
-        $("#cityIcon").attr("src", "http://openweathermap.org/img/w/" + icon + ".png");
+        $("#cityIcon").attr("src", "https://openweathermap.org/img/w/" + icon + ".png");
 
         $.ajax({
             method: "GET",
@@ -141,7 +141,7 @@ function fiveDayWeather(){
             newTemp.text("Temperature: " + fiveDayTemp);
             newHumid.text("Humidity: " + fiveDayHumid);
             newWeather.text("Weather Forecast: " + fiveDayWeather);
-            newIcon.attr("src", "http://openweathermap.org/img/w/" + fiveDayIcon + ".png");
+            newIcon.attr("src", "https://openweathermap.org/img/w/" + fiveDayIcon + ".png");
 
             $(this).append(newDate, newIcon, newBR, newTemp, newHumid, newWeather);
 
